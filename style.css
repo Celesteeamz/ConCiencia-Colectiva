@@ -203,3 +203,49 @@ body {
 .logo-secundario {
     height: 45px; 
 }
+
+.carousel {
+  width: 100%;
+  max-width: 450px;
+  margin: 20px auto;
+  position: relative;
+}
+.carousel-track {
+  width: 100%;
+  overflow: hidden;
+}
+.slide {
+  width: 100%;
+  height: auto;
+  display: none;
+}
+
+.slide.active {
+  display: block;
+}
+.carousel button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.6);
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+.carousel {
+  border: 2px solid red;
+}
+.project-title {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+}
