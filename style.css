@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    background: #030303;
+    padding: 10px 30px;
+
+    position: fixed;
+    top: 0;
+    height: 80px;
+    width: 100%;
+    z-index: 1000;
+}
+
+body {
+    padding-top: 80px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-img {
+    height: 60px;      
+    width: auto;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 26px;
+    color: white;
+    cursor: pointer;
+}
+
+.about {
+    height: 100vh;
+
+    background-image:
+        url("FotoDeAboutUs/fondo.jpg");
+
+    background-size: cover;
+    background-position: bottom center, center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+    padding-left: 10%;
+}
+
+.about,
+.info-section {
+    min-height: 100vh;
+}
+
+.about-box {
+    background: rgba(10, 10, 10, 0.88);
+    color: white;
+    padding: 40px;
+    max-width: 460px;
+    border-radius: 20px;
+    border: 2px solid #d5e862;
+
+    box-shadow:
+        0 0 12px #00ff9666,
+        0 0 28px rgba(0, 255, 150, 0.3),
+        0 0 55px rgba(0, 255, 150, 0.2);
+
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    will-change: transform;
+}
+
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 8%;
+}
+
+.about-box {
+    max-width: 420px;
+}
+
+.about-img {
+    height: 340px;
+    max-width: 420px;
+}
+
+.about-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 18px;
+}
+
+.about-box:hover {
+    transform: scale(1.04);
+    box-shadow:
+        0 0 18px #d5e862,
+        0 0 40px #6552cc,
+        0 0 70px #5f5594;
+}
+
+.about-box h2 {
+    margin-bottom: 20px;
+}
+
+.info-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 80px 10%;
+    gap: 60px;
+}
+
+.info-section.reverse {
+    flex-direction: row-reverse;
+}
+
+.info-img img {
+    width: 360px;
+    border-radius: 12px;
+}
+
+.info-text h2 {
+    margin-bottom: 15px;
+}
+
+.info-text ul {
+    margin-top: 15px;
+    list-style: none;
+}
+
+.info-text li {
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        background: #0b0b0b;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .about {
+        justify-content: center;
+        padding: 0 20px;
+    }
+
+    .about-container {
+    justify-content: center;
+    gap: 30px;
+    }
+
+    .about-box,
+    .about-img {
+        max-width: 100%;
+    }
+
+    .info-section,
+    .info-section.reverse {
+        flex-direction: column;
+        text-align: center;
+    }
+
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-secundario {
+    height: 45px; 
+}
