@@ -2,138 +2,161 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: "Inter", Arial, sans-serif;
 }
 
 html {
     scroll-behavior: smooth;
 }
 
-header {
-    background: #030303;
-    padding: 10px 30px;
-
-    position: fixed;
-    top: 0;
-    height: 80px;
-    width: 100%;
-    z-index: 1000;
-}
-
 body {
+    background-color: #19191a;
+    color: #e6e6f0;
     padding-top: 80px;
 }
 
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    z-index: 1000;
+
+    background: rgba(0, 0, 0, 0.92);
+    backdrop-filter: blur(8px);
+}
+
 .navbar {
+    height: 100%;
+    padding: 0 60px;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
 .logo-img {
-    height: 60px;      
-    width: auto;
+    height: 52px;
+    transition: transform 0.25s ease;
+}
+
+.logo-img:hover {
+    transform: scale(1.05);
 }
 
 .menu {
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 30px;
 }
 
 .menu a {
-    color: white;
     text-decoration: none;
+    color: #cfcff5;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    transition: color 0.25s ease;
 }
 
-.menu-btn {
-    display: none;
-    background: none;
-    border: none;
-    font-size: 26px;
-    color: white;
-    cursor: pointer;
+.menu a:hover {
+    color: #d5e862;
 }
 
 .about {
-    height: 100vh;
+    min-height: 100vh;
 
-    background-image:
+    background:
+        linear-gradient(
+            180deg,
+            rgba(25,25,26,0.85),
+            rgba(25,25,26,1)
+        ),
         url("FotoDeAboutUs/fondo.jpg");
 
     background-size: cover;
-    background-position: bottom center, center;
-    background-repeat: no-repeat;
+    background-position: center;
 
     display: flex;
     align-items: center;
-    padding-left: 10%;
-}
-
-.about,
-.info-section {
-    min-height: 100vh;
-}
-
-.about-box {
-    background: rgba(10, 10, 10, 0.88);
-    color: white;
-    padding: 40px;
-    max-width: 460px;
-    border-radius: 20px;
-    border: 2px solid #d5e862;
-
-    box-shadow:
-        0 0 12px #00ff9666,
-        0 0 28px rgba(0, 255, 150, 0.3),
-        0 0 55px rgba(0, 255, 150, 0.2);
-
-    transition: transform 0.25s ease, box-shadow 0.25s ease;
-    will-change: transform;
+    justify-content: center;
 }
 
 .about-container {
+    width: 100%;
+    max-width: 1200px;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
-    padding: 0 8%;
+    gap: 80px;
+    padding: 0 40px;
 }
 
 .about-box {
-    max-width: 420px;
+    width: 420px;
+    padding: 40px;
+
+    background: rgba(25, 25, 26, 0.88);
+    border-radius: 22px;
+
+    border: 1px solid rgba(101, 82, 204, 0.6);
+
+    box-shadow:
+        0 0 30px rgba(101, 82, 204, 0.25),
+        0 0 60px rgba(95, 85, 148, 0.2);
+
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.about-box:hover {
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 0 35px rgba(213, 232, 98, 0.35),
+        0 0 70px rgba(101, 82, 204, 0.45);
+}
+
+.about-box h2 {
+    color: #d5e862;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.about-box p {
+    line-height: 1.6;
+    color: #d6d6f0;
 }
 
 .about-img {
-    height: 340px;
-    max-width: 420px;
+    width: 420px;
+    height: 300px;
+
+    border-radius: 22px;
+    overflow: hidden;
+
+    box-shadow:
+        0 0 30px rgba(101, 82, 204, 0.25);
 }
 
 .about-img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 18px;
-}
-
-.about-box:hover {
-    transform: scale(1.04);
-    box-shadow:
-        0 0 18px #d5e862,
-        0 0 40px #6552cc,
-        0 0 70px #5f5594;
-}
-
-.about-box h2 {
-    margin-bottom: 20px;
 }
 
 .info-section {
     min-height: 100vh;
+    padding: 120px 12%;
+
     display: flex;
     align-items: center;
-    padding: 80px 10%;
-    gap: 60px;
+    gap: 80px;
 }
 
 .info-section.reverse {
@@ -141,49 +164,36 @@ body {
 }
 
 .info-img img {
-    width: 360px;
-    border-radius: 12px;
+    width: 500px;
+    border-radius: 18px;
+
+    box-shadow:
+        0 0 30px rgba(101, 82, 204, 0.3);
 }
 
 .info-text h2 {
+    color: #d5e862;
     margin-bottom: 15px;
 }
 
-.info-text ul {
-    margin-top: 15px;
-    list-style: none;
+.info-text p {
+    max-width: 460px;
+    line-height: 1.6;
+    color: #d6d6f0;
 }
 
-.info-text li {
-    margin-bottom: 10px;
-}
-
-@media (max-width: 768px) {
-    .menu {
-        display: none;
-        flex-direction: column;
-        background: #0b0b0b;
-        width: 100%;
-        margin-top: 10px;
-    }
-
-    .menu-btn {
-        display: block;
-    }
-
-    .about {
-        justify-content: center;
-        padding: 0 20px;
-    }
+@media (max-width: 900px) {
 
     .about-container {
-    justify-content: center;
-    gap: 30px;
+        flex-direction: column;
+        text-align: center;
+        gap: 50px;
     }
 
     .about-box,
     .about-img {
-        max-width: 100%;
+        width: 100%;
+        max-width: 420px;
     }
 
     .info-section,
@@ -192,60 +202,49 @@ body {
         text-align: center;
     }
 
+    .navbar {
+        padding: 0 30px;
+    }
 }
 
-.logo-container {
-    display: flex;
-    align-items: center;
-    gap: 12px;
+.menu-btn {
+    outline: none;
+    border: none;
+    background: none;
 }
 
-.logo-secundario {
-    height: 45px; 
+.menu-btn:focus,
+.menu-btn:active {
+    outline: none;
+    box-shadow: none;
 }
 
-.carousel {
-  width: 100%;
-  max-width: 450px;
-  margin: 20px auto;
-  position: relative;
-}
-.carousel-track {
-  width: 100%;
-  overflow: hidden;
-}
-.slide {
-  width: 100%;
-  height: auto;
-  display: none;
+#pausados {
+    position: relative;
+
+    background:
+        linear-gradient(
+            to bottom,
+            rgba(25,25,26,1) 0%,
+            rgba(25,25,26,0.8) 15%,
+            rgba(25,25,26,0) 35%,
+            rgba(25,25,26,0) 65%,
+            rgba(25,25,26,0.8) 85%,
+            rgba(25,25,26,1) 100%
+        ),
+        url("FotoDeAboutUs/fondo2.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-.slide.active {
-  display: block;
-}
-.carousel button {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: rgba(0,0,0,0.6);
-  color: white;
-  border: none;
-  padding: 8px 12px;
-  cursor: pointer;
+#pausados > * {
+    position: relative;
+    z-index: 2;
 }
 
-.prev { left: 10px; }
-.next { right: 10px; }
-.carousel {
-  border: 2px solid red;
+#pausados {
+    padding-top: 160px;
 }
-.project-title {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  padding: 12px;
-  background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
-  color: white;
-  font-size: 18px;
-  font-weight: 600;
-}
+
