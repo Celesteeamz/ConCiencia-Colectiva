@@ -4,3 +4,6 @@
             Proyectos propios 
         </p>
     </div>
+
+
+        background-color: #19191a;
