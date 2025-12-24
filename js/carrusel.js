@@ -1,24 +1,14 @@
 // Creo la biblioteca de imagenes con sus definiciones 
 let imagenes = [
    {
-        "url": "img/bmw_serie_1.jpg",
-        "nombre": "BMW Serie 1",
-        "descripcion": "El BMW Serie 1 es un compacto premium, reconocido por su dinámica de conducción, diseño deportivo y tecnología innovadora. Se ofrece en versiones de 3 y 5 puertas, con una amplia gama de motores de gasolina y diésel."
+        "url": "img/FotosdeProyectosPropios/Ar-mate1.jpg",
+        "nombre": "Ar-Mate",
+        "descripcion": "Our product stems from the desire to take mate to space as a symbol of Argentine culture. Beyond the number of Argentine astronauts, we seek to ensure that, even where there are no borders, our identity, our roots, and our worldview are present. It's not just about representation: it's about demonstrating that Argentine culture can reach as far as our dreams."
     },
     {
-        "url": "img/bmw_x3.jpg",
-        "nombre": "BMW X3", 
-        "descripcion": "El BMW X3 es un SUV compacto de lujo, producido por BMW desde 2003. Es conocido por su manejo deportivo, su interior lujoso y su diseño distintivo. Se ofrece en diversas variantes de motor, incluyendo gasolina y diésel, y en versiones con tracción trasera o total."
-    },
-    {
-        "url": "img/bmw_xm.webp",
-        "nombre": "BMW XM", 
-        "descripcion": "El BMW XM es un SUV de lujo híbrido enchufable. Se caracteriza por su potente motor V8 TwinPower Turbo de 4,4 litros, combinado con un motor eléctrico, para ofrecer una experiencia de conducción de alto rendimiento."
-    },
-    {
-        "url": "img/bmw_z4.webp",
-        "nombre": "BMW Z4", 
-        "descripcion": "El BMW Z4 es un roadster deportivo de dos plazas, conocido por su diseño elegante y su potente rendimiento. Se caracteriza por su tracción trasera, transmisión automática de ocho velocidades o manual de seis, y diferentes opciones de motor de gasolina."
+        "url": "img/FotosdeProyectosPropios/Sparky.jpg",
+        "nombre": "Sparky", 
+        "descripcion": "A smart lamp that is responsible for communicating to people when James Webb makes a new discovery by changing the color of its LEDs from gold to reddish, also allows you to see all the information from his official website once notified."
     }
 ]
 
