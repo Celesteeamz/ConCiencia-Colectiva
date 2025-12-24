@@ -1,0 +1,6 @@
+<div class="info-text">
+        <h2>Nuestros Proyectos</h2>
+        <p>
+            Proyectos propios 
+        </p>
+    </div>

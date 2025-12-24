@@ -10,8 +10,8 @@
 <header>
     <nav class="navbar">
         <div class="logo-container">
-            <img src="Logo/logoProyecto.jpg" alt="Logo Proyecto" class="logo-img">
-            <img src="Logo/logo.jpg" alt="ConCiencia Colectiva" class="logo-img logo-secundario">
+            <img src="img/Logo/logoProyecto.jpg" alt="Logo Proyecto" class="logo-img">
+            <img src="img/Logo/logo.jpg" alt="ConCiencia Colectiva" class="logo-img logo-secundario">
         </div>
 
 
@@ -38,7 +38,7 @@
         </div>
 
         <div class="about-box about-img">
-            <img src="FotoDeAboutUs/aboutUs.jpeg" alt="About Us Imagen">
+            <img src="img/FotoDeAboutUs/aboutUs.jpeg" alt="About Us Imagen">
         </div>
 
     </div>
@@ -48,7 +48,7 @@
 
 <section id="pausados" class="info-section">
     <div class="info-img">
-        <img src="FotoUno/imagen1.jpg" alt="Proyecto pausado">
+        <img src="img/FotoUno/imagen1.jpg" alt="Proyecto pausado">
     </div>
 
     <div class="info-text">
@@ -60,18 +60,34 @@
 </section>
 
 <section id="proyectos" class="info-section reverse">
-    <div class="info-img">
-        <img src="FotoDos/imagen2.jpg" alt="Proyecto activo">
-    </div>
+    
+    <div class="carrusel">
+        <div class="atras">
+            <img id="atras" src="img/botones/atras.png" alt="atras" class="boton" loading="lazy">
+        </div>
 
-    <div class="info-text">
-        <h2>Nuestros Proyectos</h2>
-        <p>
-            Proyectos propios 
-        </p>
+        <div class="imagenes">
+            <div id="img">
+                <img class="img" src="img/FotosdeProyectosPropios/Ar-mate1.jpg" alt="imagen 1" loading="lazy">
+            </div>
+            
+            <div id="texto" class="texto">
+                <h3>BMW Series 1</h3>
+                <p>El BMW Serie 1 es un compacto premium, reconocido por su dinámica de conducción, diseño deportivo y tecnología innovadora. Se ofrece en versiones de 3 y 5 puertas, con una amplia gama de motores de gasolina y diésel.</p>
+            </div>
+        </div>
+
+        <div class="adelante" id="adelante">
+            <img src="img/botones/adelante.png" alt="adelante" class="boton" loading="lazy">
+        </div>
     </div>
+    <div class="puntos" id="puntos"></div>
+
+    
+
 </section>
 
-<script src="script.js"></script>
+<script src="js/script.js"></script>
+<script src="js/carrusel.js"></script>
 </body>
 </html>
